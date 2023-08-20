@@ -1,0 +1,25 @@
+var driver__sgp40_8h =
+[
+    [ "DRIVER_SGP40_LINK_DEBUG_PRINT", "group__sgp40__link__driver.html#gaa94b42caf7210f2a2ca56c73b52a0d1d", null ],
+    [ "DRIVER_SGP40_LINK_DELAY_MS", "group__sgp40__link__driver.html#ga48fedc9c1f6cba63fa6a85881b64e027", null ],
+    [ "DRIVER_SGP40_LINK_IIC_DEINIT", "group__sgp40__link__driver.html#ga6dcc1a8717c3f8a601303fa53d360015", null ],
+    [ "DRIVER_SGP40_LINK_IIC_INIT", "group__sgp40__link__driver.html#ga8832abad867620f3f895ada153e9ded8", null ],
+    [ "DRIVER_SGP40_LINK_IIC_READ_COMMAND", "group__sgp40__link__driver.html#ga29290f51df6e1afa2491fe807be64739", null ],
+    [ "DRIVER_SGP40_LINK_IIC_WRITE_COMMAND", "group__sgp40__link__driver.html#gabcc120bd760ede9113208255e2080eb7", null ],
+    [ "DRIVER_SGP40_LINK_INIT", "group__sgp40__link__driver.html#ga16af4ecb1199969dca9819afce7f7584", null ],
+    [ "sgp40_handle_t", "group__sgp40__base__driver.html#gabd6ea5e8d6430fc86baa109615ceeff0", null ],
+    [ "sgp40_info_t", "group__sgp40__base__driver.html#gadb61d2ec417278560955725237670d4f", null ],
+    [ "sgp40_deinit", "group__sgp40__base__driver.html#gaad379cb983de6084db285a1e968c8f50", null ],
+    [ "sgp40_get_measure_raw", "group__sgp40__base__driver.html#ga03825456aa090a6440d6f7cf0e454791", null ],
+    [ "sgp40_get_measure_raw_without_compensation", "group__sgp40__base__driver.html#ga78a16a7d571b3fa64a365488bda41879", null ],
+    [ "sgp40_get_measure_test", "group__sgp40__base__driver.html#gab0f81a3c2efec00aea9ed8975f99cabc", null ],
+    [ "sgp40_get_reg", "group__sgp40__extern__driver.html#ga36904b54ad8f657ebe0e6fc9065a3e4d", null ],
+    [ "sgp40_get_serial_id", "group__sgp40__base__driver.html#ga3d70cf30f48d5f4a3874557e66801cef", null ],
+    [ "sgp40_humidity_convert_to_register", "group__sgp40__base__driver.html#ga8950d9206d3376a7f52378f80f0c509d", null ],
+    [ "sgp40_info", "group__sgp40__base__driver.html#ga7a22a7ff69d291ababfefe0f223fc10d", null ],
+    [ "sgp40_init", "group__sgp40__base__driver.html#ga41bd15f8e872758b532e9c3d117547a4", null ],
+    [ "sgp40_set_reg", "group__sgp40__extern__driver.html#gac5ff70dd0bdea8ed59182725741a6b16", null ],
+    [ "sgp40_soft_reset", "group__sgp40__base__driver.html#ga6acd5a0f1722e8ee0bc4d62c8a42cf56", null ],
+    [ "sgp40_temperature_convert_to_register", "group__sgp40__base__driver.html#gacdfff4e9b06df02f31569839c048d214", null ],
+    [ "sgp40_turn_heater_off", "group__sgp40__base__driver.html#ga99bcee729ec539d6d53e1b6c3a578421", null ]
+];
