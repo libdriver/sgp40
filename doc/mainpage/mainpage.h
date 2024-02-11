@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver SGP40
- * @brief     libdriver sgp40 is a full function driver of sgp40 and it can run in both MCU and Linux platform.
+ * @brief     LibDriver SGP40 is a full function driver of SGP40 and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
