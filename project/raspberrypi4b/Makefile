@@ -115,7 +115,11 @@ $(STATIC_LIB_NAME) : $(OBJS)
 					$(AR) -r $@ $^
 
 # .*o used by the static lib
-$(OBJS) : $(wildcard ../../src/driver_sgp40.c) $(wildcard ../../src/driver_sgp40_algorithm.c)
+$(OBJS1) : $(wildcard ../../src/driver_sgp40.c)
+		$(CC) $(CFLAGS) -c $^ $(INC_DIRS) -o $@
+
+# .*o used by the static lib
+$(OBJS2) : $(wildcard ../../src/driver_sgp40_algorithm.c)
 		$(CC) $(CFLAGS) -c $^ $(INC_DIRS) -o $@
 
 # set install .PHONY
