@@ -21,6 +21,8 @@ LibDriver SGP40 ist ein voll funktionsfähiger Treiber von SGP40, der von LibDri
   - [Dokument](#Dokument)
   - [Beitrag](#Beitrag)
   - [Lizenz](#Lizenz)
+    - [LibDriver](#LibDriver)
+    - [Gas Index Algorithm](#Gas-Index-Algorithm)
   - [Kontaktieren Sie uns](#Kontaktieren-Sie-uns)
 
 ### Anweisung
@@ -153,6 +155,12 @@ Bitte beachten Sie CONTRIBUTING.md.
 
 ### Lizenz
 
+#### LibDriver
+
+Der gesamte ursprüngliche Treiberquellcode in diesem Repository unterliegt dem Copyright (c) 2015 – heute LibDriver. Dieser Quellcode ist wie unten beschrieben unter der MIT-Lizenz (MIT) lizenziert.
+
+
+
 Urheberrechte © (c) 2015 - Gegenwart LibDriver Alle Rechte vorbehalten
 
 
@@ -194,6 +202,50 @@ HAFTUNG, OB AUS VERTRAG, DELIKT ODER ANDERWEITIG, ENTSTEHEND AUS,
 AUS ODER IM ZUSAMMENHANG MIT DER SOFTWARE ODER DER VERWENDUNG ODER ANDEREN HANDLUNGEN MIT DER
 
 SOFTWARE.
+
+#### Gas Index Algorithm
+
+Der Quellcode des Gasindexalgorithmus (driver_sgp40_algorithm.c und driver_sgp40_algorithm.h) in diesem Repository unterliegt dem Copyright (c) 2022, Sensirion AG. Dieser Quellcode ist wie unten beschrieben unter der BSD 3-Klausel-Lizenz lizenziert.
+
+
+
+Copyright (c) 2022, Sensirion AG. Alle Rechte vorbehalten.
+
+
+
+BSD 3 - Klausel-Lizenz
+
+
+
+Weiterverbreitung und Verwendung in Quell- und Binärform, mit oder ohne
+
+Änderungen, sind zulässig, sofern die folgenden Bedingungen erfüllt sind:
+
+1. Bei Weiterverbreitungen des Quellcodes müssen der obige Copyright-Vermerk, diese
+
+Liste der Bedingungen und der folgende Haftungsausschluss beibehalten werden.
+
+2. Bei Weiterverbreitungen in Binärform müssen der obige Copyright-Vermerk,
+
+diese Liste der Bedingungen und der folgende Haftungsausschluss in der Dokumentation
+
+und/oder anderen Materialien, die mit der Verteilung bereitgestellt werden, wiedergegeben werden.
+
+3. Weder der Name des Copyright-Inhabers noch die Namen seiner
+
+Mitwirkenden dürfen ohne vorherige ausdrückliche schriftliche Genehmigung zur Unterstützung oder Förderung von Produkten verwendet werden, die von dieser
+
+Software abgeleitet sind.
+
+
+
+DIESE SOFTWARE WIRD VON DEN URHEBERRECHTSINHABERN UND MITARBEITERN „WIE BESEHEN“ BEREITGESTELLT
+
+UND JEGLICHE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GARANTIEN, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF
+
+STILLSCHWEIGENDE GARANTIEN DER MARKTGÄNGIGKEIT UND EIGNUNG FÜR EINEN BESTIMMTEN ZWECK,
+
+WERDEN AUSGESCHLOSSEN. IN KEINEM FALL SIND DER URHEBERRECHTSINHABER ODER DIE MITWIRKENDEN FÜR DIREKTE, INDIREKTE, ZUFÄLLIGE, SPEZIELLE, EXEMPLARISCHE ODER FOLGESCHÄDEN (EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF, BESCHAFFUNG VON ERSATZWAREN ODER -DIENSTEN, NUTZUNGSAUSFALL, DATENVERLUST, GEWINNVERLUST ODER GESCHÄFTSUNTERBRECHUNG) VERANTWORTLICH, UNGEACHTET DER URSACHE UND UNTER JEGLICHER HAFTUNGSTHEORIE, OB VERTRAGLICH, VERSCHULDENSUNABHÄNGIG, ODER UNERLAUBTER HANDLUNG (EINSCHLIESSLICH FAHRLÄSSIGKEIT ODER ANDERWEITIG), DIE IN IRGENDEINER WEISE AUS DER VERWENDUNG DIESER SOFTWARE ENTSTEHEN, SELBST WENN AUF DIE MÖGLICHKEIT SOLCHER SCHÄDEN HINGEWIESEN WURDE.
 
 ### Kontaktieren Sie uns
 
