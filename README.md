@@ -21,6 +21,8 @@ LibDriver SGP40 is a full function driver of SGP40 launched by LibDriver.It prov
   - [Document](#Document)
   - [Contributing](#Contributing)
   - [License](#License)
+    - [LibDriver](#LibDriver)
+    - [Gas Index Algorithm](#Gas-Index-Algorithm)
   - [Contact Us](#Contact-Us)
 
 ### Instruction
@@ -153,6 +155,12 @@ Please refer to CONTRIBUTING.md.
 
 ### License
 
+#### LibDriver
+
+All original driver source code in this repository is Copyright (c) 2015 - present LibDriver. This source code is licensed under the MIT License (MIT)  as below.
+
+
+
 Copyright (c) 2015 - present LibDriver All rights reserved
 
 
@@ -194,6 +202,62 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 
 SOFTWARE. 
+
+#### Gas Index Algorithm
+
+The gas index algorithm source code(driver_sgp40_algorithm.c and driver_sgp40_algorithm.h) in this repository is Copyright (c) 2022, Sensirion AG . This source code is licensed under the BSD 3 - Clause License as below.
+
+
+
+Copyright (c) 2022, Sensirion AG All rights reserved.
+
+
+
+BSD 3 - Clause License
+
+
+
+Redistribution and use in source and binary forms, with or without
+
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+
+   this list of conditions and the following disclaimer in the documentation
+
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+
+   contributors may be used to endorse or promote products derived from
+
+   this software without specific prior written permission.
+
+   
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ### Contact Us
 
