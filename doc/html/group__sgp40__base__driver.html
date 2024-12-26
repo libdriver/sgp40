@@ -205,7 +205,7 @@ Functions</h2></td></tr>
 <p>close the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sgp40 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sgp40 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -264,10 +264,10 @@ Functions</h2></td></tr>
 <p>get the measure raw result </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sgp40 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">raw_humidity</td><td>is the humidity raw data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">raw_temperature</td><td>is the temperature raw data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*sraw_voc</td><td>points to a raw tvoc buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sgp40 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">raw_humidity</td><td>humidity raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">raw_temperature</td><td>temperature raw data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*sraw_voc</td><td>pointer to a raw tvoc buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -313,8 +313,8 @@ Functions</h2></td></tr>
 <p>get the measure raw result without compensation </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sgp40 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*sraw_voc</td><td>points to a raw tvoc buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sgp40 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*sraw_voc</td><td>pointer to a raw tvoc buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -360,8 +360,8 @@ Functions</h2></td></tr>
 <p>get the chip measure test </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sgp40 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*result</td><td>points to a test result buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sgp40 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*result</td><td>pointer to a test result buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -407,8 +407,8 @@ Functions</h2></td></tr>
 <p>get the chip serial id </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sgp40 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*id</td><td>points to an id buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sgp40 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*id</td><td>pointer to an id buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -460,9 +460,9 @@ Functions</h2></td></tr>
 <p>convert the humidity to the register data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sgp40 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rh</td><td>is the current relative humidity </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a converted register data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sgp40 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rh</td><td>current relative humidity </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a converted register data </td></tr>
   </table>
   </dd>
 </dl>
@@ -498,7 +498,7 @@ Functions</h2></td></tr>
 <p>get chip information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to an sgp40 info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to an sgp40 info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -532,7 +532,7 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sgp40 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sgp40 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -568,7 +568,7 @@ Functions</h2></td></tr>
 <p>soft reset the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sgp40 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sgp40 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -620,9 +620,9 @@ Functions</h2></td></tr>
 <p>convert the temperature to the register data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sgp40 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">temp</td><td>is the current temperature </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a converted register data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sgp40 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">temp</td><td>current temperature </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a converted register data </td></tr>
   </table>
   </dd>
 </dl>
@@ -658,7 +658,7 @@ Functions</h2></td></tr>
 <p>turn heater off </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sgp40 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sgp40 handle structure </td></tr>
   </table>
   </dd>
 </dl>

@@ -100,7 +100,7 @@
 
 /**
  * @brief     mean variance estimator set parameters
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
  * @note      none
  */
 static void a_mean_variance_estimator_set_parameters(sgp40_gas_index_algorithm_t *params)
@@ -144,9 +144,9 @@ static void a_mean_variance_estimator_set_parameters(sgp40_gas_index_algorithm_t
 
 /**
  * @brief     mox model set parameters
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
- * @param[in] sraw_std is the source raw std
- * @param[in] sraw_mean is the source raw mean
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in] sraw_std source raw std
+ * @param[in] sraw_mean source raw mean
  * @note      none
  */
 static void a_mox_model_set_parameters(sgp40_gas_index_algorithm_t *params, float sraw_std, float sraw_mean)
@@ -157,7 +157,7 @@ static void a_mox_model_set_parameters(sgp40_gas_index_algorithm_t *params, floa
 
 /**
  * @brief     mean variance estimator get std
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
  * @return    mean variance estimator std
  */
 static float a_mean_variance_estimator_get_std(const sgp40_gas_index_algorithm_t *params)
@@ -167,7 +167,7 @@ static float a_mean_variance_estimator_get_std(const sgp40_gas_index_algorithm_t
 
 /**
  * @brief     mean variance estimator get mean
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
  * @return    mean variance estimator get mean
  */
 static float a_mean_variance_estimator_get_mean(const sgp40_gas_index_algorithm_t *params)
@@ -178,10 +178,10 @@ static float a_mean_variance_estimator_get_mean(const sgp40_gas_index_algorithm_
 
 /**
  * @brief     sigmoid scaled set parameters
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
- * @param[in] x0 is the set x0
- * @param[in] k is the set k
- * @param[in] offset_default is the set offset default
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in] x0 set x0
+ * @param[in] k set k
+ * @param[in] offset_default set offset default
  * @note      none
  */
 static void a_sigmoid_scaled_set_parameters(sgp40_gas_index_algorithm_t *params, float x0, float k, float offset_default)
@@ -193,7 +193,7 @@ static void a_sigmoid_scaled_set_parameters(sgp40_gas_index_algorithm_t *params,
 
 /**
  * @brief     adaptive lowpass set parameters
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
  * @note      none
  */
 static void a_adaptive_lowpass_set_parameters(sgp40_gas_index_algorithm_t *params)
@@ -207,7 +207,7 @@ static void a_adaptive_lowpass_set_parameters(sgp40_gas_index_algorithm_t *param
 
 /**
  * @brief     init instances
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
  * @note      none
  */
 static void a_init_instances(sgp40_gas_index_algorithm_t *params)
@@ -233,10 +233,10 @@ static void a_init_instances(sgp40_gas_index_algorithm_t *params)
 
 /**
  * @brief     mean variance estimator set states
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
- * @param[in] mean is the set mean
- * @param[in] std is the set std
- * @param[in] uptime_gamma is the uptime gamma
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in] mean set mean
+ * @param[in] std set std
+ * @param[in] uptime_gamma uptime gamma
  * @note      none
  */
 static void a_mean_variance_estimator_set_states(sgp40_gas_index_algorithm_t *params, float mean, 
@@ -250,7 +250,7 @@ static void a_mean_variance_estimator_set_states(sgp40_gas_index_algorithm_t *pa
 
 /**
  * @brief     mean variance estimator is initialized
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
  * @return    mean variance estimator initialized
  */
 static uint8_t a_mean_variance_estimator_is_initialized(sgp40_gas_index_algorithm_t *params)
@@ -260,9 +260,9 @@ static uint8_t a_mean_variance_estimator_is_initialized(sgp40_gas_index_algorith
 
 /**
  * @brief     mean variance estimator sigmoid set parameters
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
- * @param[in] x0 is the set x0
- * @param[in] k is the set k
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in] x0 set x0
+ * @param[in] k set k
  * @note      none
  */
 static void a_mean_variance_estimator_sigmoid_set_parameters(sgp40_gas_index_algorithm_t *params, float x0, float k)
@@ -273,7 +273,7 @@ static void a_mean_variance_estimator_sigmoid_set_parameters(sgp40_gas_index_alg
 
 /**
  * @brief     mean variance estimator sigmoid process
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
  * @return    mean variance estimator sigmoid
  */
 static float a_mean_variance_estimator_sigmoid_process(sgp40_gas_index_algorithm_t *params, float sample)
@@ -298,7 +298,7 @@ static float a_mean_variance_estimator_sigmoid_process(sgp40_gas_index_algorithm
 
 /**
  * @brief     mean variance estimator calculate gamma
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
  * @note      none
  */
 static void a_mean_variance_estimator_calculate_gamma(sgp40_gas_index_algorithm_t *params)
@@ -371,8 +371,8 @@ static void a_mean_variance_estimator_calculate_gamma(sgp40_gas_index_algorithm_
 
 /**
  * @brief     mean variance estimator process
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
- * @param[in] sraw is the source raw
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in] sraw source raw
  * @note      none
  */
 static void a_mean_variance_estimator_process(sgp40_gas_index_algorithm_t *params, float sraw)
@@ -431,8 +431,8 @@ static void a_mean_variance_estimator_process(sgp40_gas_index_algorithm_t *param
 
 /**
  * @brief     mox model process
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
- * @param[in] sraw is the source raw
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in] sraw source raw
  * @return    raw
  */
 static float a_mox_model_process(sgp40_gas_index_algorithm_t *params, float sraw)
@@ -453,8 +453,8 @@ static float a_mox_model_process(sgp40_gas_index_algorithm_t *params, float sraw
 
 /**
  * @brief     sigmoid scaled process
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
- * @param[in] sample is the set sample
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in] sample set sample
  * @return    sigmoid
  */
 static float a_sigmoid_scaled_process(sgp40_gas_index_algorithm_t *params, float sample)
@@ -497,8 +497,8 @@ static float a_sigmoid_scaled_process(sgp40_gas_index_algorithm_t *params, float
 
 /**
  * @brief     adaptive lowpass process
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
- * @param[in] sample is the set sample
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in] sample set sample
  * @return    adaptive lowpass
  */
 static float a_adaptive_lowpass_process(sgp40_gas_index_algorithm_t *params, float sample)
@@ -537,7 +537,7 @@ static float a_adaptive_lowpass_process(sgp40_gas_index_algorithm_t *params, flo
 
 /**
  * @brief     algorithm reset
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
  */
 void sgp40_algorithm_reset(sgp40_gas_index_algorithm_t *params)
 {
@@ -549,9 +549,9 @@ void sgp40_algorithm_reset(sgp40_gas_index_algorithm_t *params)
 
 /**
  * @brief     algorithm init with sampling interval
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
- * @param[in] algorithm_type is the algorithm type
- * @param[in] sampling_interval is the sampling interval
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in] algorithm_type algorithm type
+ * @param[in] sampling_interval sampling interval
  */
 void sgp40_algorithm_init_with_sampling_interval(sgp40_gas_index_algorithm_t *params, int32_t algorithm_type, float sampling_interval)
 {
@@ -584,8 +584,8 @@ void sgp40_algorithm_init_with_sampling_interval(sgp40_gas_index_algorithm_t *pa
 
 /**
  * @brief     algorithm init
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
- * @param[in] algorithm_type is the algorithm type
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in] algorithm_type algorithm type
  */
 void sgp40_algorithm_init(sgp40_gas_index_algorithm_t *params, int32_t algorithm_type)
 {
@@ -594,8 +594,8 @@ void sgp40_algorithm_init(sgp40_gas_index_algorithm_t *params, int32_t algorithm
 
 /**
  * @brief      algorithm get sampling interval
- * @param[in]  *params points to an sgp40 gas index algorithm handle structure
- * @param[out] *sampling_interval points to a sampling interval buffer
+ * @param[in]  *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[out] *sampling_interval pointer to a sampling interval buffer
  */
 void sgp40_algorithm_get_sampling_interval(const sgp40_gas_index_algorithm_t *params, float *sampling_interval)
 {
@@ -604,9 +604,9 @@ void sgp40_algorithm_get_sampling_interval(const sgp40_gas_index_algorithm_t *pa
 
 /**
  * @brief      algorithm get states
- * @param[in]  *params points to an sgp40 gas index algorithm handle structure
- * @param[out] *state0 points to a state0 buffer
- * @param[out] *state1 points to a state1 buffer
+ * @param[in]  *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[out] *state0 pointer to a state0 buffer
+ * @param[out] *state1 pointer to a state1 buffer
  */
 void sgp40_algorithm_get_states(const sgp40_gas_index_algorithm_t *params, float* state0, float* state1)
 {
@@ -616,9 +616,9 @@ void sgp40_algorithm_get_states(const sgp40_gas_index_algorithm_t *params, float
 
 /**
  * @brief     algorithm set states
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
- * @param[in] state0 is the set state0
- * @param[in] state1 is the set state1
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in] state0 set state0
+ * @param[in] state1 set state1
  */
 void sgp40_algorithm_set_states(sgp40_gas_index_algorithm_t *params, float state0, float state1)
 {
@@ -631,13 +631,13 @@ void sgp40_algorithm_set_states(sgp40_gas_index_algorithm_t *params, float state
 
 /**
  * @brief     algorithm set tuning parameters
- * @param[in] *params points to an sgp40 gas index algorithm handle structure
- * @param[in] index_offset is the index offset
- * @param[in] learning_time_offset_hours is the learning time offset hours
- * @param[in] learning_time_gain_hours is the learning time gain hours
- * @param[in] gating_max_duration_minutes is the gating max duration minutes
- * @param[in] std_initial is the std initial
- * @param[in] gain_factor is the gain factor
+ * @param[in] *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in] index_offset index offset
+ * @param[in] learning_time_offset_hours learning time offset hours
+ * @param[in] learning_time_gain_hours learning time gain hours
+ * @param[in] gating_max_duration_minutes gating max duration minutes
+ * @param[in] std_initial std initial
+ * @param[in] gain_factor gain factor
  */
 void sgp40_algorithm_set_tuning_parameters(sgp40_gas_index_algorithm_t *params, int32_t index_offset,
                                            int32_t learning_time_offset_hours, int32_t learning_time_gain_hours,
@@ -655,13 +655,13 @@ void sgp40_algorithm_set_tuning_parameters(sgp40_gas_index_algorithm_t *params, 
 
 /**
  * @brief      algorithm get tuning parameters
- * @param[in]  *params points to an sgp40 gas index algorithm handle structure
- * @param[out] *index_offset points to a index offset buffer
- * @param[out] *learning_time_offset_hours points to a learning time offset hours buffer
- * @param[out] *learning_time_gain_hours points to a learning time gain hours buffer
- * @param[out] *gating_max_duration_minutes points to a gating max duration minutes buffer
- * @param[out] *std_initial points to a std initial buffer
- * @param[out] *gain_factor points to a gain factor buffer
+ * @param[in]  *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[out] *index_offset pointer to a index offset buffer
+ * @param[out] *learning_time_offset_hours pointer to a learning time offset hours buffer
+ * @param[out] *learning_time_gain_hours pointer to a learning time gain hours buffer
+ * @param[out] *gating_max_duration_minutes pointer to a gating max duration minutes buffer
+ * @param[out] *std_initial pointer to a std initial buffer
+ * @param[out] *gain_factor pointer to a gain factor buffer
  */
 void sgp40_algorithm_get_tuning_parameters(const sgp40_gas_index_algorithm_t *params, int32_t *index_offset,
                                            int32_t *learning_time_offset_hours, int32_t *learning_time_gain_hours,
@@ -679,9 +679,9 @@ void sgp40_algorithm_get_tuning_parameters(const sgp40_gas_index_algorithm_t *pa
 
 /**
  * @brief      algorithm process
- * @param[in]  *params points to an sgp40 gas index algorithm handle structure
- * @param[in]  sraw is the source raw
- * @param[out] *gas_index points to a gas index buffer
+ * @param[in]  *params pointer to an sgp40 gas index algorithm handle structure
+ * @param[in]  sraw source raw
+ * @param[out] *gas_index pointer to a gas index buffer
  */
 void sgp40_algorithm_process(sgp40_gas_index_algorithm_t *params, int32_t sraw, int32_t *gas_index)
 {
