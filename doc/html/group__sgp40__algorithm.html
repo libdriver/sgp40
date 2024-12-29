@@ -233,8 +233,8 @@ Functions</h2></td></tr>
 <p>algorithm get sampling interval </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>points to an sgp40 gas index algorithm handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*sampling_interval</td><td>points to a sampling interval buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>pointer to an sgp40 gas index algorithm handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*sampling_interval</td><td>pointer to a sampling interval buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -278,9 +278,9 @@ Functions</h2></td></tr>
 <p>algorithm get states </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>points to an sgp40 gas index algorithm handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*state0</td><td>points to a state0 buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*state1</td><td>points to a state1 buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>pointer to an sgp40 gas index algorithm handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*state0</td><td>pointer to a state0 buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*state1</td><td>pointer to a state1 buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -348,13 +348,13 @@ Functions</h2></td></tr>
 <p>algorithm get tuning parameters </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>points to an sgp40 gas index algorithm handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*index_offset</td><td>points to a index offset buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*learning_time_offset_hours</td><td>points to a learning time offset hours buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*learning_time_gain_hours</td><td>points to a learning time gain hours buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*gating_max_duration_minutes</td><td>points to a gating max duration minutes buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*std_initial</td><td>points to a std initial buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*gain_factor</td><td>points to a gain factor buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>pointer to an sgp40 gas index algorithm handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*index_offset</td><td>pointer to a index offset buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*learning_time_offset_hours</td><td>pointer to a learning time offset hours buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*learning_time_gain_hours</td><td>pointer to a learning time gain hours buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*gating_max_duration_minutes</td><td>pointer to a gating max duration minutes buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*std_initial</td><td>pointer to a std initial buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*gain_factor</td><td>pointer to a gain factor buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -392,8 +392,8 @@ Functions</h2></td></tr>
 <p>algorithm init </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>points to an sgp40 gas index algorithm handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">algorithm_type</td><td>is the algorithm type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>pointer to an sgp40 gas index algorithm handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">algorithm_type</td><td>algorithm type </td></tr>
   </table>
   </dd>
 </dl>
@@ -437,9 +437,9 @@ Functions</h2></td></tr>
 <p>algorithm init with sampling interval </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>points to an sgp40 gas index algorithm handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">algorithm_type</td><td>is the algorithm type </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sampling_interval</td><td>is the sampling interval </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>pointer to an sgp40 gas index algorithm handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">algorithm_type</td><td>algorithm type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sampling_interval</td><td>sampling interval </td></tr>
   </table>
   </dd>
 </dl>
@@ -483,9 +483,9 @@ Functions</h2></td></tr>
 <p>algorithm process </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>points to an sgp40 gas index algorithm handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sraw</td><td>is the source raw </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*gas_index</td><td>points to a gas index buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>pointer to an sgp40 gas index algorithm handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sraw</td><td>source raw </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*gas_index</td><td>pointer to a gas index buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -513,7 +513,7 @@ Functions</h2></td></tr>
 <p>algorithm reset </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>points to an sgp40 gas index algorithm handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>pointer to an sgp40 gas index algorithm handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -557,9 +557,9 @@ Functions</h2></td></tr>
 <p>algorithm set states </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>points to an sgp40 gas index algorithm handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">state0</td><td>is the set state0 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">state1</td><td>is the set state1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>pointer to an sgp40 gas index algorithm handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">state0</td><td>set state0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">state1</td><td>set state1 </td></tr>
   </table>
   </dd>
 </dl>
@@ -627,13 +627,13 @@ Functions</h2></td></tr>
 <p>algorithm set tuning parameters </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>points to an sgp40 gas index algorithm handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index_offset</td><td>is the index offset </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">learning_time_offset_hours</td><td>is the learning time offset hours </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">learning_time_gain_hours</td><td>is the learning time gain hours </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gating_max_duration_minutes</td><td>is the gating max duration minutes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">std_initial</td><td>is the std initial </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gain_factor</td><td>is the gain factor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*params</td><td>pointer to an sgp40 gas index algorithm handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index_offset</td><td>index offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">learning_time_offset_hours</td><td>learning time offset hours </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">learning_time_gain_hours</td><td>learning time gain hours </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gating_max_duration_minutes</td><td>gating max duration minutes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">std_initial</td><td>std initial </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gain_factor</td><td>gain factor </td></tr>
   </table>
   </dd>
 </dl>

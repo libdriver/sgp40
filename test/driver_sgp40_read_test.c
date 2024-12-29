@@ -42,7 +42,7 @@ static sgp40_gas_index_algorithm_t gs_voc_handle;        /**< voc handle */
 
 /**
  * @brief     read test
- * @param[in] times is the test times
+ * @param[in] times test times
  * @return    status code
  *            - 0 success
  *            - 1 test failed

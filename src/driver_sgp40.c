@@ -70,13 +70,13 @@
 
 /**
  * @brief      read bytes with param
- * @param[in]  *handle points to an sgp40 handle structure
- * @param[in]  reg is the iic register address
- * @param[in]  *data points to a data buffer
- * @param[in]  len is the data length
- * @param[in]  delay_ms is the delay time in ms
- * @param[out] *output points to an output buffer
- * @param[in]  output_len is the output length
+ * @param[in]  *handle pointer to an sgp40 handle structure
+ * @param[in]  reg iic register address
+ * @param[in]  *data pointer to a data buffer
+ * @param[in]  len data length
+ * @param[in]  delay_ms delay time in ms
+ * @param[out] *output pointer to an output buffer
+ * @param[in]  output_len output length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -117,11 +117,11 @@ static uint8_t a_sgp40_iic_read_with_param(sgp40_handle_t *handle, uint16_t reg,
 
 /**
  * @brief      read bytes
- * @param[in]  *handle points to an sgp40 handle structure
- * @param[in]  reg is the iic register address
- * @param[out] *data points to a data buffer
- * @param[in]  len is the data length
- * @param[in]  delay_ms is the delay time in ms
+ * @param[in]  *handle pointer to an sgp40 handle structure
+ * @param[in]  reg iic register address
+ * @param[out] *data pointer to a data buffer
+ * @param[in]  len data length
+ * @param[in]  delay_ms delay time in ms
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -151,10 +151,10 @@ static uint8_t a_sgp40_iic_read(sgp40_handle_t *handle, uint16_t reg, uint8_t *d
 
 /**
  * @brief     write bytes
- * @param[in] *handle points to an sgp40 handle structure
- * @param[in] reg is the iic register address
- * @param[in] *data points to a data buffer
- * @param[in] len is the data length
+ * @param[in] *handle pointer to an sgp40 handle structure
+ * @param[in] reg iic register address
+ * @param[in] *data pointer to a data buffer
+ * @param[in] len data length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -189,8 +189,8 @@ static uint8_t a_sgp40_iic_write(sgp40_handle_t *handle, uint16_t reg, uint8_t *
 
 /**
  * @brief     generate the crc
- * @param[in] *data points to a data buffer
- * @param[in] count is the data length
+ * @param[in] *data pointer to a data buffer
+ * @param[in] count data length
  * @return    crc
  * @note      none
  */
@@ -221,9 +221,9 @@ static uint8_t a_sgp40_generate_crc(uint8_t* data, uint8_t count)
 
 /**
  * @brief      convert the humidity to the register data
- * @param[in]  *handle points to an sgp40 handle structure
- * @param[in]  rh is the current relative humidity
- * @param[out] *reg points to a converted register data
+ * @param[in]  *handle pointer to an sgp40 handle structure
+ * @param[in]  rh current relative humidity
+ * @param[out] *reg pointer to a converted register data
  * @return     status code
  *             - 0 success
  *             - 1 humidity convert to register failed
@@ -249,9 +249,9 @@ uint8_t sgp40_humidity_convert_to_register(sgp40_handle_t *handle, float rh, uin
 
 /**
  * @brief      convert the temperature to the register data
- * @param[in]  *handle points to an sgp40 handle structure
- * @param[in]  temp is the current temperature
- * @param[out] *reg points to a converted register data
+ * @param[in]  *handle pointer to an sgp40 handle structure
+ * @param[in]  temp current temperature
+ * @param[out] *reg pointer to a converted register data
  * @return     status code
  *             - 0 success
  *             - 1 temperature convert to register failed
@@ -277,10 +277,10 @@ uint8_t sgp40_temperature_convert_to_register(sgp40_handle_t *handle, float temp
 
 /**
  * @brief      get the measure raw result
- * @param[in]  *handle points to an sgp40 handle structure
- * @param[in]  raw_humidity is the humidity raw data
- * @param[in]  raw_temperature is the temperature raw data
- * @param[out] *sraw_voc points to a raw tvoc buffer
+ * @param[in]  *handle pointer to an sgp40 handle structure
+ * @param[in]  raw_humidity humidity raw data
+ * @param[in]  raw_temperature temperature raw data
+ * @param[out] *sraw_voc pointer to a raw tvoc buffer
  * @return     status code
  *             - 0 success
  *             - 1 get measure raw failed
@@ -331,8 +331,8 @@ uint8_t sgp40_get_measure_raw(sgp40_handle_t *handle, uint16_t raw_humidity,
 
 /**
  * @brief      get the measure raw result without compensation
- * @param[in]  *handle points to an sgp40 handle structure
- * @param[out] *sraw_voc points to a raw tvoc buffer
+ * @param[in]  *handle pointer to an sgp40 handle structure
+ * @param[out] *sraw_voc pointer to a raw tvoc buffer
  * @return     status code
  *             - 0 success
  *             - 1 get measure raw without compensation failed
@@ -382,8 +382,8 @@ uint8_t sgp40_get_measure_raw_without_compensation(sgp40_handle_t *handle, uint1
 
 /**
  * @brief      get the chip measure test
- * @param[in]  *handle points to an sgp40 handle structure
- * @param[out] *result points to a test result buffer
+ * @param[in]  *handle pointer to an sgp40 handle structure
+ * @param[out] *result pointer to a test result buffer
  * @return     status code
  *             - 0 success
  *             - 1 measure test failed
@@ -426,7 +426,7 @@ uint8_t sgp40_get_measure_test(sgp40_handle_t *handle, uint16_t *result)
 
 /**
  * @brief     soft reset the chip
- * @param[in] *handle points to an sgp40 handle structure
+ * @param[in] *handle pointer to an sgp40 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 soft reset failed
@@ -463,7 +463,7 @@ uint8_t sgp40_soft_reset(sgp40_handle_t *handle)
 
 /**
  * @brief     turn heater off
- * @param[in] *handle points to an sgp40 handle structure
+ * @param[in] *handle pointer to an sgp40 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 turn heater off failed
@@ -498,8 +498,8 @@ uint8_t sgp40_turn_heater_off(sgp40_handle_t *handle)
 
 /**
  * @brief      get the chip serial id
- * @param[in]  *handle points to an sgp40 handle structure
- * @param[out] *id points to an id buffer
+ * @param[in]  *handle pointer to an sgp40 handle structure
+ * @param[out] *id pointer to an id buffer
  * @return     status code
  *             - 0 success
  *             - 1 get serial id failed
@@ -556,7 +556,7 @@ uint8_t sgp40_get_serial_id(sgp40_handle_t *handle, uint16_t id[3])
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an sgp40 handle structure
+ * @param[in] *handle pointer to an sgp40 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic initialization failed
@@ -618,7 +618,7 @@ uint8_t sgp40_init(sgp40_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an sgp40 handle structure
+ * @param[in] *handle pointer to an sgp40 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic deinit failed
@@ -657,10 +657,10 @@ uint8_t sgp40_deinit(sgp40_handle_t *handle)
 
 /**
  * @brief     set the chip register
- * @param[in] *handle points to an sgp40 handle structure
- * @param[in] reg is the iic register address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to an sgp40 handle structure
+ * @param[in] reg iic register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -684,10 +684,10 @@ uint8_t sgp40_set_reg(sgp40_handle_t *handle, uint16_t reg, uint8_t *buf, uint16
 
 /**
  * @brief      get the chip register
- * @param[in]  *handle points to an sgp40 handle structure
- * @param[in]  reg is the iic register address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  *handle pointer to an sgp40 handle structure
+ * @param[in]  reg iic register address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -711,7 +711,7 @@ uint8_t sgp40_get_reg(sgp40_handle_t *handle, uint16_t reg, uint8_t *buf, uint16
 
 /**
  * @brief      get chip information
- * @param[out] *info points to an sgp40 info structure
+ * @param[out] *info pointer to an sgp40 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
