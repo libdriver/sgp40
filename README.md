@@ -10,7 +10,7 @@
 
 The SGP40 is a digital gas sensor designed for easy integration into air purifier s or demand controlled ventilation systems. Sensirion’s CMOSens ® technology offers a complete , easy to use sensor system on a single chip featuring a digital I 2 C interface and a temperature controlled micro hotplate, providing a humidity compensated VOC based indoor air quality signal . The output signal can be directly processed by Sensirion’s powerful Gas Index Algorithm to translate the raw signal into a VOC Index as a robust measure for in door air quality. The Gas Index Algorithm automatically adapts to the environment the sensor is exposed to. Both sensing element and Gas Index Algorithm feature an unmatched robustness against contaminating gases present in real world applications enabling a unique long term stability as well as low drift and device to device variation. The very small 2.44 x 2.44 x 0.85 mm 3 DFN package enables applications in limited spaces. Sensirion’s state of the art production process guarantees high reproducibility and reliability. Tape and reel packaging together with suitability for standard SMD assembly processes make the SGP40 predestined for high volume applications.
 
-LibDriver SGP40 is a full function driver of SGP40 launched by LibDriver.It provides VOC reading, temperature and humidity correction and other functions. LibDriver is MISRA compliant.
+LibDriver SGP40 is a full-featured driver of SGP40 launched by LibDriver.It provides VOC reading, temperature and humidity correction and other functions. LibDriver is MISRA compliant.
 
 ### Table of Contents
 
