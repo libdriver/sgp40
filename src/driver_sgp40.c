@@ -270,7 +270,7 @@ uint8_t sgp40_temperature_convert_to_register(sgp40_handle_t *handle, float temp
         return 3;                                                 /* return error */
     }
     
-    *reg = (uint16_t)((temp + 45.0f) / 175.0f * 65535.0f);        /* convert the humidity */
+    *reg = (uint16_t)((temp + 45.0f) / 175.0f * 65535.0f);        /* convert the temperature */
     
     return 0;                                                     /* success return 0 */
 }
